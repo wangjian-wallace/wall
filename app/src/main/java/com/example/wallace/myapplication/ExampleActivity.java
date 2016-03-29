@@ -12,6 +12,9 @@ import com.example.wallace.myapplication.bean.User;
 import com.example.wallace.myapplication.presenter.UserLoginPresenter;
 import com.example.wallace.myapplication.view.ILoginView;
 
+/**
+ * MVP设计模式的简单示例
+ */
 public class ExampleActivity extends Activity implements ILoginView{
 
     private EditText mEtUsername, mEtPassword;
