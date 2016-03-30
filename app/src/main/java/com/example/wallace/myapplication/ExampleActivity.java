@@ -1,6 +1,7 @@
 package com.example.wallace.myapplication;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -95,15 +96,18 @@ public class ExampleActivity extends Activity implements ILoginView{
     @Override
     public void hideLoading()
     {
-        mPbLoading.setVisibility(View.GONE);
+        mPbLoading.setVisibility(View.INVISIBLE);
     }
 
 
     @Override
     public void toMainActivity(User user)
     {
-        Toast.makeText(this, user.getUsername() +
-                " login success , to MainActivity", Toast.LENGTH_SHORT).show();
+//        Toast.makeText(this, user.getUsername() +
+//                " login success , to MainActivity", Toast.LENGTH_SHORT).show();
+        Intent intent = new Intent(this,TransformersActivity.class);
+        startActivity(intent);
+        finish();
     }
 
     @Override
