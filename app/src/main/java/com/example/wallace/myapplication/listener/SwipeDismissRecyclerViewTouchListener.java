@@ -18,7 +18,10 @@ import java.util.Collections;
 import java.util.List;
 
 
-
+/**
+ *  RecyclerView 滑动删除
+ *  @author Wallace
+ */
 
 public class SwipeDismissRecyclerViewTouchListener implements View.OnTouchListener {
     // Cached ViewConfiguration and system-wide constant values

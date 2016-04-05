@@ -33,6 +33,10 @@ import java.lang.reflect.Field;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * RecyclerView 滑动删除<br/>
+ * ViewPager 滑动特效
+ */
 public class TransformersActivity extends Activity implements AdapterView.OnItemClickListener{
     private ArrayList<String> transformerList;
     private ArrayList<Integer> localImages;

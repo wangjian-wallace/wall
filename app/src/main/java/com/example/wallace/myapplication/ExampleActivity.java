@@ -10,6 +10,7 @@ import android.widget.ProgressBar;
 import android.widget.Toast;
 
 import com.example.wallace.myapplication.bean.User;
+import com.example.wallace.myapplication.list.ui.SimpleListActivity;
 import com.example.wallace.myapplication.presenter.UserLoginPresenter;
 import com.example.wallace.myapplication.view.ILoginView;
 
@@ -105,7 +106,8 @@ public class ExampleActivity extends Activity implements ILoginView{
     {
 //        Toast.makeText(this, user.getUsername() +
 //                " login success , to MainActivity", Toast.LENGTH_SHORT).show();
-        Intent intent = new Intent(this,TransformersActivity.class);
+        Intent intent = new Intent(this,SimpleListActivity.class);
+//        Intent intent = new Intent(this,TransformersAdapter.class);
         startActivity(intent);
         finish();
     }
